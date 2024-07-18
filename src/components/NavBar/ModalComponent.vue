@@ -1,81 +1,146 @@
 <script setup>
-// const openModalButton = document.querySelector("open-modal");
-// const closeModalButton = document.querySelector("close-modal");
-// const modal = document.querySelector("modal");
-// const fade = document.querySelector("fade");
+import { reactive, defineEmits } from 'vue'
+import ArrowLeft from 'vue-material-design-icons/ArrowLeft.vue'
+import ArrowRight from 'vue-material-design-icons/ArrowRight.vue'
+import Heart from 'vue-material-design-icons/Heart.vue'
 
-// [openModalButton, closeModalButton, fade].forEach((el) => {
-//   el.addEventListener("click", () => console.log("teste"));
-// })
-
+const createCategory = async () => {
+  await categoryStore.createCategory(category)
+  emit('close')
+}
 </script>
 <template>
-  <button class="bt" id="open-modal">OBTENHA PREMIUM</button>
-  <div id="fade" class="hide"></div>
-  <div id="modal" class="hide">
-    <div class="modal-header"></div>
-    <h2>Escreva o seu nome</h2>
-    <input type="text" placeholder="nome" />
-    <button class="bt">enviar</button>
-
-    <!-- <button class="bt-heart">
-      <svg
-        height="32"
-        width="32"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-        class="empty"
-      >
-        <path d="M0 0H24V24H0z" fill="none"></path>
-        <path
-          d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2zm-3.566 15.604c.881-.556 1.676-1.109 2.42-1.701C18.335 14.533 20 11.943 20 9c0-2.36-1.537-4-3.5-4-1.076 0-2.24.57-3.086 1.414L12 7.828l-1.414-1.414C9.74 5.57 8.576 5 7.5 5 5.56 5 4 6.656 4 9c0 2.944 1.666 5.533 4.645 7.903.745.592 1.54 1.145 2.421 1.7.299.189.595.37.934.572.339-.202.635-.383.934-.571z"
-        ></path>
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        width="32"
-        height="32"
-        class="filled"
-      >
-        <path fill="none" d="M0 0H24V24H0z"></path>
-        <path
-          d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z"
-        ></path>
-      </svg>
-    </button> -->
+  <button class="bt">OBTENHA PREMIUM</button>
+  <div class="modal">
+    <div class="modal-content">
+      <div class="left">
+        <div class="arrow">
+          <ArrowLeft />
+        </div>
+      </div>
+      <div class="center">
+        <img
+          class="logo"
+          src="https://accounts.spicysparks.com/images/logos/eSoundLogo_WhiteTransparent.png"
+          alt=""
+        />
+        <!-- <button @click="$emit('close')" class="btn-close">
+          <i class="mdi mdi-close" />
+        </button> -->
+        <div class="heart">
+          <Heart />
+        </div>
+        <button class="bt-compra-1">
+          <div>Indo e voltando 2/7</div>
+          <div>R$ 26.00</div>
+        </button>
+        <button class="bt-compra-2">
+          <div>Indo e voltando</div>
+          <div>R$ 0.00</div>
+        </button>
+        <button class="bt-modal">CONTINUAR</button>
+      </div>
+      <div class="right">
+        <div class="arrow">
+          <ArrowRight />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <style scoped>
-#modal {
-  background-color: #1E1D22;
-  height: 25vw;
-  width: 27vw;
-  margin: 2vw;
-  border-radius: 2vw;
+.arrow {
+  background-color: var(--line-color);
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 20px;
+  color: rgb(168, 168, 168);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 0.3vw;
   justify-content: center;
-  color: white;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
 }
 
-#fade {
+.bt-compra-1 {
+  border: grey 2px solid;
+  border-radius: 40px;
+  background-color: transparent;
+  color: white;
+  width: 140%;
+  padding: 1.5vw;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.bt-compra-2 {
+  border: var(--button-color) 2px solid;
+  border-radius: 40px;
+  background-color: transparent;
+  color: white;
+  width: 140%;
+  padding: 1.5vw;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.btn-close {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 2.5vw;
+}
+
+.heart {
+  font-size: 30px;
+  color: red;
+}
+
+.logo {
+  width: 8vw;
+}
+
+.teste {
+  color: white;
+}
+
+.modal {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 5;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
 }
 
-#modal.hide, #fade.hide  {
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  flex-direction: column;
+}
+
+.modal-content {
+  background-color: var(--modal-background-color);
+  padding: 2vw;
+  border-radius: 10px;
+  color: white;
+  width: 60vw;
+  height: 55vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#modal.hide,
+#fade.hide {
   opacity: 0;
 }
 
@@ -84,7 +149,7 @@ h2 {
 }
 
 input {
-  background-color: #3A3A3AB5;
+  background-color: #3a3a3ab5;
   border: 1px #505050 solid;
   border-radius: 10px;
   padding: 1vw;
@@ -99,15 +164,31 @@ input {
   width: 220px;
   align-items: center;
   justify-content: center;
-  background-color: #09cc09;
+  background-color: var(--button-color);
   border-radius: 2vw;
   font-weight: bold;
   cursor: pointer;
   border: none;
-  font-size: 18px; 
+  font-size: 18px;
   margin: 2vw;
   padding: 0 1vw;
 }
+
+.bt-modal {
+  display: flex;
+  height: 2.5em;
+  width: 140%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button-color);
+  border-radius: 2vw;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  padding: 0 1vw;
+}
+
 .bt-heart {
   display: flex;
   justify-content: center;
