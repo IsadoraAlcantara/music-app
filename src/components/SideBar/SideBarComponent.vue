@@ -24,13 +24,13 @@ main {
   background-color: var(--black-200);
   border-right: 1px solid var(--grey-200);
   height: 62vw;
-  width: 20%;
+  width: 250px;
   display: flex;
   flex-direction: column;
   padding: 1.5vw;
 }
 
 .logo img {
-  width: 12vw;
+  width: 150px;
 }
 </style>

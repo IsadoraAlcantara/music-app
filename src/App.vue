@@ -1,18 +1,17 @@
 <script setup>
-import SideBar from './components/SideBar/SideBarComponent.vue'
-import NavBar from './components/NavBar/NavBarComponent.vue'
+// import SideBar from './components/SideBar/SideBarComponent.vue'
+// import NavBar from './components/NavBar/NavBarComponent.vue'
 </script>
 
 <template>
-  <header>
+  <!-- <header>
     <nav>
       <div>
         <SideBar />
         <NavBar />
       </div>
     </nav>
-  </header>
-
+  </header> -->
   <RouterView />
 </template>
 
