@@ -2,7 +2,7 @@
 <template>
   <div class="container">
     <div class="icon">
-        <slot name="icon"></slot>  
+      <slot name="icon"></slot>
     </div>
     <p>
       <slot name="text"></slot>
@@ -11,13 +11,13 @@
 </template>
 <style scoped>
 .container {
-  color: var(--text-color);
+  color: var(--grey-100);
   display: flex;
   align-items: center;
 }
 
 .icon {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 p {

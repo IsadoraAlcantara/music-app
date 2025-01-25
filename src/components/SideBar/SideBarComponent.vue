@@ -21,8 +21,8 @@ import HeartOutline from 'vue-material-design-icons/HeartOutline.vue'
 </template>
 <style scoped>
 main {
-  background-color: var(--sidebar-backgroud-color);
-  border-right: 1px solid var(--line-color);
+  background-color: var(--black-200);
+  border-right: 1px solid var(--grey-200);
   height: 62vw;
   width: 20%;
   display: flex;

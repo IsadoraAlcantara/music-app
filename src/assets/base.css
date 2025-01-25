@@ -1,8 +1,9 @@
 :root {
-  --vt-c-white: #ffffff;
-  --sidebar-backgroud-color: #14141A; 
-  --text-color: #BDBDBF;
-  --line-color: #4F5059;
-  --modal-background-color: #1F1F24;
-  --button-color: #09cc09;
+  --white: #ffffff;
+  --grey-100: #bdbdbf;
+  --grey-200: #4f5059;
+
+  --black-100: #1f1f24;
+  --black-200: #14141a;
+  --green: #09cc09;
 }
