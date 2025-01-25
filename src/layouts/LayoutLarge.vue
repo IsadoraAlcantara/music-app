@@ -4,12 +4,12 @@
 </script>
 <template>
   <div id="layout-large">
-    <header>
-      <large-header />
-    </header>
     <aside>
       <large-aside />
     </aside>
+    <header>
+      <large-header />
+    </header>
     <main>
       <router-view />
     </main>
