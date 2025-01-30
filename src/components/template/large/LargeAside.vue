@@ -1,5 +1,5 @@
 <script setup>
-import { HomeOutline, HeartOutline, PlaylistPlus } from '../../icons'
+import { HomeOutline, MicrophoneVariant, PlaylistPlus, Album, FolderPlayOutline } from '../../icons'
 </script>
 <template>
   <main>
@@ -10,87 +10,125 @@ import { HomeOutline, HeartOutline, PlaylistPlus } from '../../icons'
       />
     </div>
     <div class="navigation">
-      <div class="line">
-        <HomeOutline />
-        <p>Início</p>
-      </div>
-      <div class="line">
-        <HeartOutline />
-        <p>Gêneros</p>
-      </div>
-    </div>
-    <div class="navigation">
       <h2>Biblioteca</h2>
       <div class="line">
-        <p>Descobrir</p>
-      </div>
-      <div class="line">
+        <HomeOutline size="20" />
         <p>Playlists</p>
       </div>
       <div class="line">
-        <p>Faixas</p>
-      </div>
-      <div class="line">
+        <MicrophoneVariant size="20" />
         <p>Artistas</p>
       </div>
       <div class="line">
+        <Album size="20" />
         <p>Álbuns</p>
       </div>
       <div class="line">
-        <p>Importar músicas</p>
+        <FolderPlayOutline size="20" />
+        <p>Gêneros</p>
       </div>
     </div>
     <div class="navigation">
       <h2>Playlists</h2>
       <div class="line">
-        <PlaylistPlus />
+        <PlaylistPlus size="23" />
         <p>Criar playlist</p>
       </div>
-      <div class="line">
-        <p>Phonk</p>
+      <div class="playlist">
+        <img src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="">
+        <p>Romantique</p>
       </div>
-      <div class="line">
-        <p>Triste</p>
+      <div class="playlist">
+        <img src="https://i.ibb.co/Jw8vbxVg/Ethereal-Hues-Vintage-Floral-Canvas-Wall-Art.jpg" alt="">
+        <p>Romantique</p>
+      </div>
+      <div class="playlist">
+        <img src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="">
+        <p>Romantique</p>
+      </div>
+      <div class="playlist">
+        <img src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="">
+        <p>Romantique</p>
       </div>
     </div>
   </main>
 </template>
 <style scoped>
 main {
-  background-color: var(--black-200);
-  border-right: 1px solid var(--grey-200);
-  height: 100vh;
+  background-color: #1e1e1e;
+  border-radius: 7px;
+  margin: 10px;
   width: 250px;
+  height: 800px;
   display: flex;
   flex-direction: column;
-  padding: 1.5vw;
+  padding: 10px;
   position: sticky;
   top: 0;
 }
 
 .logo img {
   width: 150px;
+  margin: 10px 0 20px 0;
+  display: flex;
+  justify-self: center;
 }
 
 .navigation {
-  margin: 10px 0;
+  margin: 18px 0;
+
+  & p, span {
+    color: #e6e8ee;
+  }
+
+  & h2 {
+    color: #a0a0a0;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 3% 17px;
+  }
+
+  & .playlist {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+
+    & img {
+      width: 50px;
+      height: 50px;
+      border-radius: 7px;
+    }
+  }
 }
 
 .line {
-  color: var(--grey-200);
   font-weight: 500;
   display: flex;
+  align-items: center;
   gap: 15px;
-  margin: 10px 0;
+  color: red;
+  padding: 0 17px;
+  height: 45px;
+  margin: 5px 0;
+  border-radius: 7px;
+
+  & span {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .line:hover {
-  color: var(--green);
+  background-color: #393939;
 }
 
-h2 {
-  color: var(--white);
-  font-size: 16px;
-  font-weight: 500;
+.playlist {
+  padding: 5px 17px;
+  border-radius: 7px;
+}
+
+.playlist:hover {
+  background-color: #393939;
 }
 </style>
