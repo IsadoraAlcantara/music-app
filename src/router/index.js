@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
 import LayoutFull from '@/layouts/LayoutFull.vue';
 
 const router = createRouter({
@@ -13,7 +12,12 @@ const router = createRouter({
         {
           path: '',
           name: 'Home',
-          component: HomeView,
+          component: () => import('../views/HomeView.vue')
+        },
+        {
+          path: '/playlist',
+          name: 'Playlist',
+          component: () => import('../views/PlaylistView.vue')
         },
       ],
     },
