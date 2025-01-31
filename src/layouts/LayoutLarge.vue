@@ -1,6 +1,7 @@
 <script setup>
   import LargeHeader from '../components/template/large/LargeHeader.vue';
   import LargeAside from '../components/template/large/LargeAside.vue';
+  import LargeFooter from '../components/template/large/LargeFooter.vue';
 </script>
 <template>
   <div id="layout-large">
@@ -13,6 +14,9 @@
     <main>
       <router-view />
     </main>
+    <footer>
+      <large-footer />
+    </footer>
   </div>
 </template>
 <style>
@@ -22,7 +26,8 @@
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     'aside header'
-    'aside main';
+    'aside main'
+    'footer footer';
 }
 
 header {
@@ -40,5 +45,10 @@ aside {
 main {
   min-height: 80%;
   grid-area: main;
+}
+
+footer {
+  align-items: center;
+  grid-area: footer;
 }
 </style>
