@@ -1,5 +1,6 @@
 <script setup>
-import { Magnify, HomeOutline } from '../../icons'
+import { HomeOutline } from '../../icons'
+import { SearchComponent } from '@/components'
 </script>
 <template>
   <div>
@@ -7,10 +8,7 @@ import { Magnify, HomeOutline } from '../../icons'
     <nav>
       <div class="container">
         <HomeOutline size="30" />
-        <div class="search">
-          <Magnify />
-          <input type="text" placeholder="Pesquisar" />
-        </div>
+        <SearchComponent />
       </div>
       <button class="bt-user">
         <img src="https://i.ibb.co/YBBpLQsg/transferir-2.jpg" alt="" />
@@ -36,27 +34,6 @@ div {
   color: #a0a0a0;
   align-items: center;
   gap: 20px;
-}
-
-.search {
-  background-color: rgba(128, 128, 128, 0.3);
-  width: 300px;
-  color: #a0a0a0;
-  border-radius: 20px;
-  padding: 8px 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  & span {
-    display: flex;
-  }
-
-  & input {
-    background-color: transparent;
-    border: none;
-    font-size: 15px;
-  }
 }
 
 .bt-user {

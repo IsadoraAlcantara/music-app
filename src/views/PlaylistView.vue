@@ -12,7 +12,7 @@ import { ArtistPlaylist, MainPlaylist, AlbumPlaylist } from '@/components'
 </template>
 <style scoped>
 .container {
-display: flex;
+  display: flex;
 }
 
 .aside {

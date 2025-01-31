@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+import { Play, DotsHorizontal, Shuffle, FormatListBulleted } from '../icons'
+import { SearchComponent } from '@/components'
+</script>
 <template>
   <main>
     <div class="playlist-details">
@@ -12,6 +15,45 @@
         </div>
       </div>
     </div>
+    <div class="functions">
+      <div class="buttons-left">
+        <Play class="play" size="100" />
+        <Shuffle />
+        <DotsHorizontal />
+      </div>
+      <div class="buttons-right">
+        <SearchComponent />
+        <FormatListBulleted />
+      </div>
+    </div>
+    <table class="list-info">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Título</th>
+          <th>Artista</th>
+          <th>Álbum</th>
+          <th>Duração</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <th>
+            <div class="title">
+              <img
+                class="music-img"
+                src="https://i.ibb.co/zVbqkzLm/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+                alt=""
+              />Peppers (feat. Tommy Genesis)
+            </div>
+          </th>
+          <th>Lana Del Rey, Tommy Genesis</th>
+          <th>Ultraviolence (Deluxe)</th>
+          <th>4:00</th>
+        </tr>
+      </tbody>
+    </table>
   </main>
 </template>
 <style scoped>
@@ -54,5 +96,69 @@ main {
       gap: 10px;
     }
   }
+}
+
+.functions {
+  color: #a0a0a0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  & .buttons-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    & span {
+      margin-right: 20px;
+    }
+
+    & .play {
+      color: #e6e8ee;
+      margin: 0;
+    }
+  }
+
+  & .buttons-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    & span {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.list-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #a0a0a0;
+
+  & thead {
+    border-bottom: 1px solid rgba(81,81,81, 0.7);
+    width: 100%;
+  }
+
+  & .title {
+    color: #E6E8EE;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  & .music-img {
+    width: 50px;
+    border-radius: 7px;
+  }
+
+}
+
+table {
+  width: 95%;
+  display: flex;
+  justify-self: center;
 }
 </style>
