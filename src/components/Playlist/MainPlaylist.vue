@@ -27,16 +27,13 @@ import { SearchComponent } from '@/components'
       </div>
     </div>
     <table class="list-info">
-      <thead>
-        <tr>
+        <tr class="col">
           <th>#</th>
           <th>Título</th>
           <th>Artista</th>
           <th>Álbum</th>
           <th>Duração</th>
         </tr>
-      </thead>
-      <tbody>
         <tr>
           <th>1</th>
           <th>
@@ -52,7 +49,6 @@ import { SearchComponent } from '@/components'
           <th>Ultraviolence (Deluxe)</th>
           <th>4:00</th>
         </tr>
-      </tbody>
     </table>
   </main>
 </template>
@@ -137,7 +133,7 @@ main {
   align-items: center;
   color: #a0a0a0;
 
-  & thead {
+  & .col {
     border-bottom: 1px solid rgba(81,81,81, 0.7);
     width: 100%;
   }
