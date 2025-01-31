@@ -58,7 +58,7 @@ main {
   background-color: #1e1e1e;
   border-radius: 7px;
   margin: 10px;
-  width: 250px;
+  width: 270px;
   height: 800px;
   display: flex;
   flex-direction: column;
@@ -108,7 +108,7 @@ main {
   align-items: center;
   gap: 15px;
   color: red;
-  padding: 0 17px;
+  padding: 0 25px;
   height: 45px;
   margin: 5px 0;
   border-radius: 7px;
@@ -124,7 +124,7 @@ main {
 }
 
 .playlist {
-  padding: 5px 17px;
+  padding: 5px 25px;
   border-radius: 7px;
 }
 
