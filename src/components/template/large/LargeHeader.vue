@@ -1,11 +1,20 @@
+<script setup>
+import { Magnify, HomeOutline } from '../../icons'
+</script>
 <template>
   <div>
     <!-- perguntar se ta certo, div usada para que o padding não afete o tamanho da tela -->
     <nav>
-      <div class="search">
-        <input type="text" placeholder="Pesquisar" />
+      <div class="container">
+        <HomeOutline size="30" />
+        <div class="search">
+          <Magnify />
+          <input type="text" placeholder="Pesquisar" />
+        </div>
       </div>
-      <button class="bt-premium">OBTENHA PREMIUM</button>
+      <button class="bt-user">
+        <img src="https://i.ibb.co/YBBpLQsg/transferir-2.jpg" alt="" />
+      </button>
     </nav>
   </div>
 </template>
@@ -13,6 +22,7 @@
 nav {
   padding: 10px;
   display: flex;
+  justify-content: space-between;
 }
 
 div {
@@ -21,22 +31,43 @@ div {
   top: 0;
 }
 
-input {
-  color: var(--white);
-  background-color: rgba(128, 128, 128, 0.3);
-  border: none;
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-size: 15px;
-  width: 300px;
+.container {
+  display: flex;
+  color: #a0a0a0;
+  align-items: center;
+  gap: 20px;
 }
 
-.bt-premium {
-  padding: 8px 20px;
+.search {
+  background-color: rgba(128, 128, 128, 0.3);
+  width: 300px;
+  color: #a0a0a0;
   border-radius: 20px;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  & span {
+    display: flex;
+  }
+
+  & input {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+  }
+}
+
+.bt-user {
+  display: flex;
+  align-items: center;
   border: none;
-  background: rgb(40, 82, 231);
-  background: linear-gradient(270deg, rgba(40, 82, 231, 1) 0%, rgba(9, 204, 9, 1) 83%);
-  font-weight: bold;
+  border-radius: 20px;
+
+  & img {
+    width: 40px;
+    border-radius: 20px;
+  }
 }
 </style>
