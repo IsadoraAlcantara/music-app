@@ -9,7 +9,7 @@
       </div>
       <div class="line">
         <img src="https://i.ibb.co/zVbqkzLm/ab67616d0000b27359ae8cf65d498afdd5585634.jpg" alt="" />
-        <p>Why'd You Only Call Me When You'...</p>
+        <p>Why'd You Only Call Me When Yo...</p>
       </div>
       <div class="line">
         <img src="https://i.ibb.co/zVbqkzLm/ab67616d0000b27359ae8cf65d498afdd5585634.jpg" alt="" />
@@ -17,7 +17,7 @@
       </div>
       <div class="line">
         <img src="https://i.ibb.co/zVbqkzLm/ab67616d0000b27359ae8cf65d498afdd5585634.jpg" alt="" />
-        <p>Why'd You Only Call Me When You'...</p>
+        <p>Why'd You Only Call Me When Yo...</p>
       </div>
       <div class="line">
         <img src="https://i.ibb.co/zVbqkzLm/ab67616d0000b27359ae8cf65d498afdd5585634.jpg" alt="" />
@@ -25,7 +25,7 @@
       </div>
       <div class="line">
         <img src="https://i.ibb.co/zVbqkzLm/ab67616d0000b27359ae8cf65d498afdd5585634.jpg" alt="" />
-        <p>Why'd You Only Call Me When You'...</p>
+        <p>Why'd You Only Call Me When Yo...</p>
       </div>
     </div>
   </div>
@@ -56,6 +56,14 @@ h2 {
   align-items: center;
   gap: 17px;
   margin: 10px 0;
+  height: 60px;
+  width: 95%;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.line:hover {
+    background-color: #393939;
 }
 
 img {

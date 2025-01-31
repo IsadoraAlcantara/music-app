@@ -34,21 +34,34 @@ import { HomeOutline, MicrophoneVariant, PlaylistPlus, Album, FolderPlayOutline 
         <PlaylistPlus size="23" />
         <p>Criar playlist</p>
       </div>
-      <div class="playlist">
-        <img src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="">
-        <p>Romantique</p>
-      </div>
-      <div class="playlist">
-        <img src="https://i.ibb.co/Jw8vbxVg/Ethereal-Hues-Vintage-Floral-Canvas-Wall-Art.jpg" alt="">
-        <p>Romantique</p>
-      </div>
-      <div class="playlist">
-        <img src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="">
-        <p>Romantique</p>
-      </div>
-      <div class="playlist">
-        <img src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="">
-        <p>Romantique</p>
+      <div class="scroll">
+        <div class="playlist">
+          <img src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
+          <p>Romantique</p>
+        </div>
+        <div class="playlist">
+          <img
+            src="https://i.ibb.co/Jw8vbxVg/Ethereal-Hues-Vintage-Floral-Canvas-Wall-Art.jpg"
+            alt=""
+          />
+          <p>Romantique</p>
+        </div>
+        <div class="playlist">
+          <img src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
+          <p>Romantique</p>
+        </div>
+        <div class="playlist">
+          <img src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
+          <p>Romantique</p>
+        </div>
+        <div class="playlist">
+          <img src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
+          <p>Romantique</p>
+        </div>
+        <div class="playlist">
+          <img src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
+          <p>Romantique</p>
+        </div>
       </div>
     </div>
   </main>
@@ -77,7 +90,8 @@ main {
 .navigation {
   margin: 18px 0;
 
-  & p, span {
+  & p,
+  span {
     color: #e6e8ee;
   }
 
@@ -107,7 +121,6 @@ main {
   display: flex;
   align-items: center;
   gap: 15px;
-  color: red;
   padding: 0 25px;
   height: 45px;
   margin: 5px 0;
@@ -130,5 +143,10 @@ main {
 
 .playlist:hover {
   background-color: #393939;
+}
+
+.scroll {
+  overflow-y: scroll;
+  max-height: 300px;
 }
 </style>

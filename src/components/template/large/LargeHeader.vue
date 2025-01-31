@@ -4,7 +4,6 @@ import { SearchComponent } from '@/components'
 </script>
 <template>
   <div>
-    <!-- perguntar se ta certo, div usada para que o padding não afete o tamanho da tela -->
     <nav>
       <div class="container">
         <HomeOutline size="30" />
@@ -21,12 +20,7 @@ nav {
   padding: 10px;
   display: flex;
   justify-content: space-between;
-}
-
-div {
-  width: 86.1vw;
-  position: sticky;
-  top: 0;
+  width: 84vw;
 }
 
 .container {
