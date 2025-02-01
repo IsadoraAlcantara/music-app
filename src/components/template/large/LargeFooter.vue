@@ -2,7 +2,7 @@
 import { Play, Shuffle, Sync, SkipNext } from '../../icons'
 </script>
 <template>
-  <footer>
+  <div class="footer">
     <div class="song-container">
       <img src="https://i.ibb.co/j9khvjd8/Lady-Gaga-Bad-Romance.jpg" alt="" />
       <div>
@@ -27,13 +27,14 @@ import { Play, Shuffle, Sync, SkipNext } from '../../icons'
         <p>4:00</p>
       </div>
     </div>
-  </footer>
+  </div>
 </template>
 <style scoped>
-footer {
+.footer {
   padding: 12px;
   color: #e6e8ee;
   display: flex;
+  position: relative
 }
 
 .song-container {
@@ -57,7 +58,10 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-self: center;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+
 
   & p {
     font-size: 12px;

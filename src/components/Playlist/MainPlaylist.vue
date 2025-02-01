@@ -30,7 +30,7 @@ import { SearchComponent } from '@/components'
         <tr class="col">
           <th>#</th>
           <th>Título</th>
-          <th>Artista</th>
+          <!-- <th>Artista</th> -->
           <th>Álbum</th>
           <th>Duração</th>
         </tr>
@@ -42,10 +42,12 @@ import { SearchComponent } from '@/components'
                 class="music-img"
                 src="https://i.ibb.co/zVbqkzLm/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
                 alt=""
-              />Peppers (feat. Tommy Genesis)
+              />
+              Peppers (feat. Tommy Genesis)
+          <!-- <th>Lana Del Rey, Tommy Genesis</th> -->
             </div>
           </th>
-          <th>Lana Del Rey, Tommy Genesis</th>
+          <!-- <th>Lana Del Rey, Tommy Genesis</th> -->
           <th>Ultraviolence (Deluxe)</th>
           <th>4:00</th>
         </tr>
@@ -128,20 +130,22 @@ main {
 }
 
 .list-info {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   color: #a0a0a0;
+  /* width: 40vw; */
 
   & .col {
     border-bottom: 1px solid rgba(81,81,81, 0.7);
-    width: 100%;
+    /* width: 100%; */
   }
 
   & .title {
     color: #E6E8EE;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 18px;
   }
 
@@ -154,7 +158,8 @@ main {
 
 table {
   width: 95%;
-  display: flex;
-  justify-self: center;
+  margin: 0 auto;
+  /* display: flex;
+  justify-self: center; */
 }
 </style>
