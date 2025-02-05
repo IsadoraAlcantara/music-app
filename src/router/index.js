@@ -19,6 +19,11 @@ const router = createRouter({
           name: 'Playlist',
           component: () => import('../views/PlaylistView.vue')
         },
+        {
+          path: '/gender',
+          name: 'Gender',
+          component: () => import('../views/GenderView.vue')
+        },
       ],
     },
   ],

@@ -31,7 +31,7 @@ import { Play, Shuffle, Sync, SkipNext } from '../../icons'
 </template>
 <style scoped>
 .footer {
-  padding: 12px;
+  padding: 7px 12px 12px 12px;
   color: #e6e8ee;
   display: flex;
   position: relative
