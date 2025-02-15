@@ -1,13 +1,15 @@
-import MainPlaylist from "./Playlist/MainPlaylist.vue";
-import ArtistPlaylist from "./SideBar/ArtistPlaylist.vue";
-import AlbumPlaylist from "./SideBar/AlbumPlaylist.vue";
+import MainSongListComponent from "./SongList/MainSongListComponent.vue";
+import ArtistAsideComponent from "./SideBar/ArtistAsideComponent.vue";
+import AlbumAsideComponent from "./SideBar/AlbumAsideComponent.vue";
 import SearchComponent from '@/components/SearchComponent.vue';
-import MainGender from './Gender/MainGender.vue'
+import MainGenderComponent from './Gender/MainGenderComponent.vue'
+import MainPlaylistComponent from './Playlist/MainPlaylistComponent.vue'
 
 export {
-    MainPlaylist, 
-    ArtistPlaylist,
-    AlbumPlaylist,
+    ArtistAsideComponent,
+    AlbumAsideComponent,
     SearchComponent,
-    MainGender,
+    MainSongListComponent, 
+    MainGenderComponent,
+    MainPlaylistComponent,
 }

@@ -1,9 +1,9 @@
 <script setup>
-import { ArtistAsideComponent, MainGenderComponent, AlbumAsideComponent } from '@/components'
+import { ArtistAsideComponent, MainSongListComponent, AlbumAsideComponent } from '@/components'
 </script>
 <template>
   <div class="container">
-    <MainGenderComponent />
+    <MainSongListComponent />
     <div class="aside">
       <ArtistAsideComponent />
       <AlbumAsideComponent />

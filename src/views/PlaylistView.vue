@@ -1,12 +1,12 @@
 <script setup>
-import { ArtistPlaylist, MainPlaylist, AlbumPlaylist } from '@/components'
+import { ArtistAsideComponent, MainPlaylistComponent, AlbumAsideComponent } from '@/components'
 </script>
 <template>
   <div class="container">
-    <MainPlaylist />
+    <MainPlaylistComponent />
     <div class="aside">
-      <ArtistPlaylist />
-      <AlbumPlaylist />
+      <ArtistAsideComponent />
+      <AlbumAsideComponent />
     </div>
   </div>
 </template>
