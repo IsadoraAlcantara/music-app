@@ -5,7 +5,7 @@ import { genders } from './index'
   <div class="container">
     <h1>Gêneros</h1>
     <div class="buttons">
-      <button class="activated">Tudo</button><button class="default">Favoritos</button>
+      <button class="selected">Tudo</button><button class="default">Favoritos</button>
     </div>
     <div class="cards">
       <div v-for="gender in genders">
@@ -57,7 +57,7 @@ import { genders } from './index'
     font-weight: 600;
   }
 
-  & .activated {
+  & .selected {
     background-color: #e6e8ee;
     color: #0d0d0d;
     border: none;
