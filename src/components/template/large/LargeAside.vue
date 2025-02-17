@@ -1,5 +1,5 @@
 <script setup>
-import { HomeOutline, MicrophoneVariant, PlaylistPlus, Album, FolderPlayOutline } from '../../icons'
+import { PlaylistMusic, MicrophoneVariant, PlaylistPlus, Album, FolderPlayOutline } from '../../icons'
 </script>
 <template>
   <main>
@@ -11,22 +11,22 @@ import { HomeOutline, MicrophoneVariant, PlaylistPlus, Album, FolderPlayOutline 
     </div>
     <div class="navigation">
       <h2>Biblioteca</h2>
-      <div class="line">
-        <HomeOutline size="20" />
+      <router-link to="/playlist" class="line">
+        <PlaylistMusic size="20" />
         <p>Playlists</p>
-      </div>
-      <div class="line">
+      </router-link>
+      <router-link to="/artist" class="line">
         <MicrophoneVariant size="20" />
         <p>Artistas</p>
-      </div>
-      <div class="line">
+      </router-link>
+      <router-link to="#" class="line">
         <Album size="20" />
         <p>Álbuns</p>
-      </div>
-      <div class="line">
+      </router-link>
+      <router-link to="gender" class="line">
         <FolderPlayOutline size="20" />
         <p>Gêneros</p>
-      </div>
+      </router-link>
     </div>
     <div class="navigation">
       <h2>Playlists</h2>
@@ -117,6 +117,7 @@ main {
 }
 
 .line {
+  text-decoration: none;
   font-weight: 500;
   display: flex;
   align-items: center;
