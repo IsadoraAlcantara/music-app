@@ -215,12 +215,6 @@ import { Play, PlaylistPlus } from '../icons'
   }
 }
 
-/* .teste {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-} */
-
 .card:hover {
   background-color: #393939;
 }
