@@ -1,5 +1,5 @@
 <script setup>
-import { Play } from '../icons'
+import { Play, PlaylistPlus } from '../icons'
 </script>
 <template>
   <div class="container">
@@ -10,6 +10,109 @@ import { Play } from '../icons'
       <button class="default">Podcast</button>
     </div>
     <div class="cards">
+      <div class="create-card">
+        <PlaylistPlus size="70" />
+        <p>Criar playlist</p>
+      </div>
+      <div class="card">
+        <img class="playlist-img" src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
+        <div class="blur">
+          <Play size="70" />
+        </div>
+        <h2>Romantique</h2>
+        <div class="user">
+          <img src="https://i.ibb.co/YBBpLQsg/transferir-2.jpg" alt="" />
+          <p>Isadora Alcantara</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="playlist-img" src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
+        <div class="blur">
+          <Play size="70" />
+        </div>
+        <h2>Romantique</h2>
+        <div class="user">
+          <img src="https://i.ibb.co/YBBpLQsg/transferir-2.jpg" alt="" />
+          <p>Isadora Alcantara</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="playlist-img" src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
+        <div class="blur">
+          <Play size="70" />
+        </div>
+        <h2>Romantique</h2>
+        <div class="user">
+          <img src="https://i.ibb.co/YBBpLQsg/transferir-2.jpg" alt="" />
+          <p>Isadora Alcantara</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="playlist-img" src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
+        <div class="blur">
+          <Play size="70" />
+        </div>
+        <h2>Romantique</h2>
+        <div class="user">
+          <img src="https://i.ibb.co/YBBpLQsg/transferir-2.jpg" alt="" />
+          <p>Isadora Alcantara</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="playlist-img" src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
+        <div class="blur">
+          <Play size="70" />
+        </div>
+        <h2>Romantique</h2>
+        <div class="user">
+          <img src="https://i.ibb.co/YBBpLQsg/transferir-2.jpg" alt="" />
+          <p>Isadora Alcantara</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="playlist-img" src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
+        <div class="blur">
+          <Play size="70" />
+        </div>
+        <h2>Romantique</h2>
+        <div class="user">
+          <img src="https://i.ibb.co/YBBpLQsg/transferir-2.jpg" alt="" />
+          <p>Isadora Alcantara</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="playlist-img" src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
+        <div class="blur">
+          <Play size="70" />
+        </div>
+        <h2>Romantique</h2>
+        <div class="user">
+          <img src="https://i.ibb.co/YBBpLQsg/transferir-2.jpg" alt="" />
+          <p>Isadora Alcantara</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="playlist-img" src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
+        <div class="blur">
+          <Play size="70" />
+        </div>
+        <h2>Romantique</h2>
+        <div class="user">
+          <img src="https://i.ibb.co/YBBpLQsg/transferir-2.jpg" alt="" />
+          <p>Isadora Alcantara</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="playlist-img" src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
+        <div class="blur">
+          <Play size="70" />
+        </div>
+        <h2>Romantique</h2>
+        <div class="user">
+          <img src="https://i.ibb.co/YBBpLQsg/transferir-2.jpg" alt="" />
+          <p>Isadora Alcantara</p>
+        </div>
+      </div>
       <div class="card">
         <img class="playlist-img" src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
         <div class="blur">
@@ -62,6 +165,16 @@ import { Play } from '../icons'
     background-color: transparent;
     color: #e6e8ee;
   }
+
+  & .default:hover {
+    background-color: #272727;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .card {
@@ -102,11 +215,11 @@ import { Play } from '../icons'
   }
 }
 
-.teste {
+/* .teste {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
+} */
 
 .card:hover {
   background-color: #393939;
@@ -118,14 +231,28 @@ import { Play } from '../icons'
 
 .blur {
   display: none;
-  position: relative;
+  position: absolute;
   z-index: 4;
-  bottom: 175px;
   align-items: center;
   justify-content: center;
   background-color: rgba(81, 81, 81, 0.2);
   width: 9vw;
   height: 9vw;
   border-radius: 7px;
+}
+
+.create-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 10vw;
+  height: 100%;
+  border: #505050 1px solid;
+  border-radius: 7px;
+}
+
+.create-card:hover {
+  color: #A193BF;
 }
 </style>

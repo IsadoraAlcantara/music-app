@@ -68,5 +68,9 @@ import { genders } from './index'
     background-color: transparent;
     color: #e6e8ee;
   }
+
+  & .default:hover {
+    background-color: #272727;
+  }
 }
 </style>
