@@ -226,7 +226,7 @@ import { Play, PlaylistPlus } from '../icons'
 .blur {
   display: none;
   position: absolute;
-  z-index: 4;
+  z-index: 1;
   align-items: center;
   justify-content: center;
   background-color: rgba(81, 81, 81, 0.2);

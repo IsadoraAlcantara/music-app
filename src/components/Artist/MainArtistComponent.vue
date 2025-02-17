@@ -1,3 +1,6 @@
+<script setup>
+import { BookmarkOutline } from '../icons'
+</script>
 <template>
   <div class="container">
     <h1>Artistas</h1>
@@ -6,56 +9,142 @@
     </div>
     <div class="cards">
       <div class="card">
-        <img src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg" alt="" />
+        <div class="img-container">
+          <BookmarkOutline />
+          <img
+            src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+            alt=""
+          />
+        </div>
         <div class="text">
           <p>Lana Del Rey</p>
           <button class="see-button">ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg" alt="" />
+        <div class="img-container">
+          <BookmarkOutline />
+          <img
+            src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+            alt=""
+          />
+        </div>
         <div class="text">
           <p>Lana Del Rey</p>
           <button class="see-button">ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg" alt="" />
+        <div class="img-container">
+          <BookmarkOutline />
+          <img
+            src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+            alt=""
+          />
+        </div>
         <div class="text">
           <p>Lana Del Rey</p>
           <button class="see-button">ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg" alt="" />
+        <div class="img-container">
+          <BookmarkOutline />
+          <img
+            src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+            alt=""
+          />
+        </div>
         <div class="text">
           <p>Lana Del Rey</p>
           <button class="see-button">ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg" alt="" />
+        <div class="img-container">
+          <BookmarkOutline />
+          <img
+            src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+            alt=""
+          />
+        </div>
         <div class="text">
           <p>Lana Del Rey</p>
           <button class="see-button">ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg" alt="" />
+        <div class="img-container">
+          <BookmarkOutline />
+          <img
+            src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+            alt=""
+          />
+        </div>
         <div class="text">
           <p>Lana Del Rey</p>
           <button class="see-button">ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg" alt="" />
+        <div class="img-container">
+          <BookmarkOutline />
+          <img
+            src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+            alt=""
+          />
+        </div>
         <div class="text">
           <p>Lana Del Rey</p>
           <button class="see-button">ver</button>
         </div>
       </div>
       <div class="card">
-        <img src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg" alt="" />
+        <div class="img-container">
+          <BookmarkOutline />
+          <img
+            src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+            alt=""
+          />
+        </div>
+        <div class="text">
+          <p>Lana Del Rey</p>
+          <button class="see-button">ver</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img-container">
+          <BookmarkOutline />
+          <img
+            src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+            alt=""
+          />
+        </div>
+        <div class="text">
+          <p>Lana Del Rey</p>
+          <button class="see-button">ver</button>
+        </div>
+      </div>      <div class="card">
+        <div class="img-container">
+          <BookmarkOutline />
+          <img
+            src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+            alt=""
+          />
+        </div>
+        <div class="text">
+          <p>Lana Del Rey</p>
+          <button class="see-button">ver</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img-container">
+          <BookmarkOutline />
+          <img
+            src="https://i.ibb.co/BHJyftbC/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+            alt=""
+          />
+        </div>
         <div class="text">
           <p>Lana Del Rey</p>
           <button class="see-button">ver</button>
@@ -123,10 +212,23 @@
   padding: 10px;
   flex-direction: column;
 
+  & .img-container {
+    position: relative;
+
+    & span {
+      display: flex;
+      justify-self: end;
+      position: absolute;
+      z-index: 4;
+      top: 7px;
+      right: 3px;
+    }
+  }
+
   & img {
     width: 10vw;
+    height: 9vw;
     border-radius: 7px 7px 0 0;
-    height: 8vw;
     object-fit: cover;
   }
 

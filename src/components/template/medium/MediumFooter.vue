@@ -34,6 +34,8 @@ footer {
   padding: 12px;
   color: #e6e8ee;
   display: flex;
+  position: relative;
+  z-index: 4;
 }
 
 .song-container {

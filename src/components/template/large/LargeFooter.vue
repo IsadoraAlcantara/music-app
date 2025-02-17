@@ -34,7 +34,8 @@ import { Play, Shuffle, Sync, SkipNext } from '../../icons'
   padding: 7px 12px 12px 12px;
   color: #e6e8ee;
   display: flex;
-  position: relative
+  position: relative;
+  z-index: 4;
 }
 
 .song-container {
