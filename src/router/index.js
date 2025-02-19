@@ -20,19 +20,19 @@ const router = createRouter({
           component: () => import('../views/SongListView.vue')
         },
         {
-          path: '/gender',
-          name: 'Gender',
-          component: () => import('../views/GenderView.vue')
+          path: '/gender-list',
+          name: 'Gender-list',
+          component: () => import('../views/GenderListView.vue')
         },
         {
           path: '/playlist',
           name: 'Playlist',
-          component: () => import('../views/PlaylistView.vue')
+          component: () => import('../views/PlaylistListView.vue')
         },
         {
           path: '/artist',
           name: 'Artist',
-          component: () => import('../views/ArtistView.vue')
+          component: () => import('../views/ArtistListView.vue')
         },
       ],
     },

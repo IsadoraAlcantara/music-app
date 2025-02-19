@@ -185,6 +185,7 @@ import { Play, PlaylistPlus } from '../icons'
   flex-direction: column;
   padding: 12px;
   gap: 3px;
+  position: relative;
 
   & .playlist-img {
     width: 9vw;

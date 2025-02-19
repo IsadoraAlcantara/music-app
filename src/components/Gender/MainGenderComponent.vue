@@ -8,29 +8,14 @@ import { genders } from './index'
       <button class="selected">Tudo</button><button class="default">Favoritos</button>
     </div>
     <div class="cards">
-      <div v-for="gender in genders">
-        {{ gender.name }} {{ gender.url }}
+      <div class="card" v-for="gender in genders" :style="{backgroundColor: gender.color}">
+        {{ gender.name }}
+        <div class="cards-image" :style="{backgroundImage: 'url(' + gender.image +')'}"></div>
       </div>
     </div>
   </div>
 </template>
 <style scoped>
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
-
-  & div {
-    width: 14.5vw;
-    height: 8vw;
-    background-color: blue;
-    border-radius: 7px;
-    padding: 15px;
-    font-weight: 900;
-    font-size: 23px;
-  }
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -71,6 +56,37 @@ import { genders } from './index'
 
   & .default:hover {
     background-color: #272727;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+
+  & .card {
+    width: 14.5vw;
+    height: 8vw;
+    border-radius: 7px;
+    padding: 15px;
+    font-weight: 900;
+    font-size: 23px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+
+  & .cards-image {
+    background-image: inherit;
+    position: absolute;
+    border-radius: 7px;
+    right: -13px;
+    bottom: -24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 7.3vw;
+    height: 7.3vw;
+    transform: rotate(25deg);
   }
 }
 </style>
