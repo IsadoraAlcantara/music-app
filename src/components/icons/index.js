@@ -12,6 +12,8 @@ import Shuffle from 'vue-material-design-icons/Shuffle.vue'
 import FormatListBulleted from 'vue-material-design-icons/FormatListBulleted.vue'
 import SkipNext from 'vue-material-design-icons/SkipNext.vue'
 import BookmarkOutline from 'vue-material-design-icons/BookmarkOutline.vue'
+import EyeOff from 'vue-material-design-icons/EyeOff.vue'
+import Eye from 'vue-material-design-icons/Eye.vue'
 
 export {
     HomeOutline,
@@ -28,4 +30,6 @@ export {
     FormatListBulleted,
     SkipNext,
     BookmarkOutline,
+    EyeOff,
+    Eye,
 }
