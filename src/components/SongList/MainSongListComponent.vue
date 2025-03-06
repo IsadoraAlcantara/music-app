@@ -85,6 +85,70 @@ import { SearchComponent } from '@/components'
           <td>Ultraviolence (Deluxe)</td>
           <td>4:00</td>
         </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <div class="title">
+              <img
+                class="music-img"
+                src="https://i.ibb.co/zVbqkzLm/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+                alt=""
+              />
+              Peppers (feat. Tommy Genesis)
+            </div>
+          </td>
+          <td>Lana Del Rey, Tommy Genesis</td>
+          <td>Ultraviolence (Deluxe)</td>
+          <td>4:00</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <div class="title">
+              <img
+                class="music-img"
+                src="https://i.ibb.co/zVbqkzLm/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+                alt=""
+              />
+              Peppers (feat. Tommy Genesis)
+            </div>
+          </td>
+          <td>Lana Del Rey, Tommy Genesis</td>
+          <td>Ultraviolence (Deluxe)</td>
+          <td>4:00</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <div class="title">
+              <img
+                class="music-img"
+                src="https://i.ibb.co/zVbqkzLm/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+                alt=""
+              />
+              Peppers (feat. Tommy Genesis)
+            </div>
+          </td>
+          <td>Lana Del Rey, Tommy Genesis</td>
+          <td>Ultraviolence (Deluxe)</td>
+          <td>4:00</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <div class="title">
+              <img
+                class="music-img"
+                src="https://i.ibb.co/zVbqkzLm/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+                alt=""
+              />
+              Peppers (feat. Tommy Genesis)
+            </div>
+          </td>
+          <td>Lana Del Rey, Tommy Genesis</td>
+          <td>Ultraviolence (Deluxe)</td>
+          <td>4:00</td>
+        </tr>
       </tbody>
     </table>
   </main>
@@ -97,6 +161,7 @@ main {
   width: 100%;
   height: 750px;
   border-radius: 7px;
+  overflow-y: scroll;
 }
 
 .playlist-details {

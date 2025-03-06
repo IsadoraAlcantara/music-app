@@ -35,10 +35,10 @@ import { PlaylistMusic, MicrophoneVariant, PlaylistPlus, Album, FolderPlayOutlin
         <p>Criar playlist</p>
       </div>
       <div class="scroll">
-        <div class="playlist">
+        <router-link to="/song-list" class="playlist">
           <img src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
           <p>Romantique</p>
-        </div>
+        </router-link>
         <div class="playlist">
           <img
             src="https://i.ibb.co/Jw8vbxVg/Ethereal-Hues-Vintage-Floral-Canvas-Wall-Art.jpg"
@@ -140,6 +140,7 @@ main {
 .playlist {
   padding: 5px 25px;
   border-radius: 7px;
+  text-decoration: none;
 }
 
 .playlist:hover {
