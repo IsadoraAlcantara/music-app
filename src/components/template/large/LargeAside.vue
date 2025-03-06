@@ -23,7 +23,7 @@ import { PlaylistMusic, MicrophoneVariant, PlaylistPlus, Album, FolderPlayOutlin
         <Album size="20" />
         <p>Álbuns</p>
       </router-link>
-      <router-link to="gender" class="line">
+      <router-link to="/gender-list" class="line">
         <FolderPlayOutline size="20" />
         <p>Gêneros</p>
       </router-link>
@@ -134,7 +134,7 @@ main {
 }
 
 .line:hover {
-  background-color: #393939;
+  background-color: var(--darker-grey);
 }
 
 .playlist {
@@ -143,7 +143,7 @@ main {
 }
 
 .playlist:hover {
-  background-color: #393939;
+  background-color: var(--darker-grey);
 }
 
 .scroll {

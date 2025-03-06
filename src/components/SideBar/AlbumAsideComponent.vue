@@ -63,7 +63,7 @@ h2 {
 }
 
 .line:hover {
-    background-color: #393939;
+    background-color: var(--darker-grey);
 }
 
 img {

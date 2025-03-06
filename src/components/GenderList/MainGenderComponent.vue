@@ -55,7 +55,7 @@ import { genders } from './index'
   }
 
   & .default:hover {
-    background-color: #272727;
+    background-color: var(--darker-grey);
   }
 }
 

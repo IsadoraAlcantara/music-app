@@ -27,19 +27,20 @@ main {
   background-image: url(https://i.ibb.co/v409cMRK/Apresenta-o-para-Confer-ncia-Workshop-de-Lideran-a-Webinar-Azul-Formas-Org-nicas.png);
   width: 100vw;
   height: 100vh;
-  gap: 70px;
+  gap: 8%;
 }
 
 h1 {
   color: var(--white);
   font-weight: 500;
-  font-size: 3.5em;
+  font-size: 3.3em;
 }
 
 .inputs {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  width: 28vw;
 
   & input {
     font-size: 1.3em;
@@ -48,18 +49,18 @@ h1 {
   }
 
   & .name-input {
-    width: 29vw;
-    padding: 17px 35px;
+    width: 100%;
+    padding: 14px 35px;
     border-radius: 30px;
-    border: solid 3px var(--white);
+    border: solid 2px var(--white);
     background-color: transparent;
   }
 
   & .pass-input {
-    width: 29vw;
-    padding: 12px 35px;
+    width: 100%;
+    padding: 9px 35px;
     border-radius: 30px;
-    border: solid 3px var(--white);
+    border: solid 2px var(--white);
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -83,11 +84,46 @@ h1 {
 
 button {
   border: none;
-  width: 29vw;
+  width: 28vw;
   background-color: var(--white);
   padding: 18px;
   border-radius: 40px;
   font-weight: 600;
   font-size: 1.25em;
+}
+
+@media (max-width: 1330px) and (min-width: 768px) {
+  button, .inputs {
+    width: 47vw;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    gap: 55px;
+  }
+
+  h1 {
+    font-size: 2.7em;
+    position: relative;
+    bottom: 6%;
+  }
+  button {
+    width: 90vw;
+    padding: 13px;
+  }
+
+  .inputs {
+    width: 90vw;
+
+    & .name-input {
+      font-size: 1.1em;
+    }
+
+    & .pass-input {
+      font-size: 0.9em;
+      padding: 8px 32px;
+    }
+  }
 }
 </style>

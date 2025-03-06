@@ -167,7 +167,7 @@ import { Play, PlaylistPlus } from '../icons'
   }
 
   & .default:hover {
-    background-color: #272727;
+    background-color: var(--darker-grey);
   }
 }
 
@@ -217,7 +217,7 @@ import { Play, PlaylistPlus } from '../icons'
 }
 
 .card:hover {
-  background-color: #393939;
+  background-color: var(--darker-grey);
 }
 
 .card:hover > .blur {
@@ -248,6 +248,7 @@ import { Play, PlaylistPlus } from '../icons'
 }
 
 .create-card:hover {
-  color: #A193BF;
+  color: #38ABF2;
+  background-color: var(--darker-grey);
 }
 </style>

@@ -27,16 +27,19 @@ import { SearchComponent } from '@/components'
       </div>
     </div>
     <table class="list-info">
-        <tr class="col">
+      <thead>
+        <tr>
           <th>#</th>
           <th>Título</th>
-          <!-- <th>Artista</th> -->
+          <th>Artista</th>
           <th>Álbum</th>
           <th>Duração</th>
         </tr>
+      </thead>
+      <tbody>
         <tr>
-          <th>1</th>
-          <th>
+          <td>1</td>
+          <td>
             <div class="title">
               <img
                 class="music-img"
@@ -44,13 +47,45 @@ import { SearchComponent } from '@/components'
                 alt=""
               />
               Peppers (feat. Tommy Genesis)
-          <!-- <th>Lana Del Rey, Tommy Genesis</th> -->
             </div>
-          </th>
-          <!-- <th>Lana Del Rey, Tommy Genesis</th> -->
-          <th>Ultraviolence (Deluxe)</th>
-          <th>4:00</th>
+          </td>
+          <td>Lana Del Rey, Tommy Genesis</td>
+          <td>Ultraviolence (Deluxe)</td>
+          <td>4:00</td>
         </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <div class="title">
+              <img
+                class="music-img"
+                src="https://i.ibb.co/zVbqkzLm/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+                alt=""
+              />
+              Peppers (feat. Tommy Genesis)
+            </div>
+          </td>
+          <td>Lana Del Rey, Tommy Genesis</td>
+          <td>Ultraviolence (Deluxe)</td>
+          <td>4:00</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <div class="title">
+              <img
+                class="music-img"
+                src="https://i.ibb.co/zVbqkzLm/ab67616d0000b27359ae8cf65d498afdd5585634.jpg"
+                alt=""
+              />
+              Peppers (feat. Tommy Genesis)
+            </div>
+          </td>
+          <td>Lana Del Rey, Tommy Genesis</td>
+          <td>Ultraviolence (Deluxe)</td>
+          <td>4:00</td>
+        </tr>
+      </tbody>
     </table>
   </main>
 </template>
@@ -136,16 +171,48 @@ main {
   color: #a0a0a0;
   /* width: 40vw; */
 
-  & .col {
-    border-bottom: 1px solid rgba(81,81,81, 0.7);
-    /* width: 100%; */
+  & tbody {
+    & tr {
+      height: 3.5vw;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      border-radius: 7px;
+    }
+
+    tr:first-child td:first-child {
+      border-top-left-radius: 7px;
+    }
+
+    tr:first-child td:last-child {
+      border-top-right-radius: 7px;
+    }
+
+    tr:last-child td:first-child {
+      border-bottom-left-radius: 7px;
+    }
+
+    tr:last-child td:last-child {
+      border-bottom-right-radius: 7px;
+    }
+
+    & tr:hover {
+      background-color: var(--darker-grey);
+    }
+  }
+
+  & thead {
+    height: 50px;
+    border-bottom: 1px solid rgba(81, 81, 81, 0.7);
+
+    & th {
+      font-weight: 300;
+    }
   }
 
   & .title {
-    color: #E6E8EE;
+    color: #e6e8ee;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 18px;
   }
 
@@ -154,12 +221,27 @@ main {
     border-radius: 7px;
   }
 
+  & th {
+    text-align: left;
+    font-weight: 500;
+  }
+}
+
+th:first-child,
+td:first-child,
+th:last-child,
+td:last-child {
+  text-align: center !important;
+}
+
+th:first-child {
+  width: 45px;
 }
 
 table {
   width: 95%;
   margin: 0 auto;
-  /* display: flex;
-  justify-self: center; */
+  border-collapse: separate;
+  border-spacing: 0;
 }
 </style>

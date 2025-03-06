@@ -192,7 +192,7 @@ import { BookmarkOutline } from '../icons'
   }
 
   & .default:hover {
-    background-color: #272727;
+    background-color: var(--darker-grey);
   }
 }
 
@@ -249,7 +249,7 @@ import { BookmarkOutline } from '../icons'
     }
 
     & .see-button:hover {
-      background-color: #624f8c;
+      background-color: #2D4B73;
       color: #e6e8ee;
       transform: scale(1.1);
       transition: all 0.2s ease-in-out;
