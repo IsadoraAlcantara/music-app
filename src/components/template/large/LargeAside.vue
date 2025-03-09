@@ -19,7 +19,7 @@ import { PlaylistMusic, MicrophoneVariant, PlaylistPlus, Album, FolderPlayOutlin
         <MicrophoneVariant size="20" />
         <p>Artistas</p>
       </router-link>
-      <router-link to="#" class="line">
+      <router-link to="/album" class="line">
         <Album size="20" />
         <p>Álbuns</p>
       </router-link>

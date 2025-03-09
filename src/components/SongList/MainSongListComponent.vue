@@ -305,7 +305,7 @@ th:first-child {
 
 table {
   width: 95%;
-  margin: 0 auto;
+  margin: 0 auto 1vw auto;
   border-collapse: separate;
   border-spacing: 0;
 }

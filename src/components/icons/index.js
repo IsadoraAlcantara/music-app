@@ -14,6 +14,7 @@ import SkipNext from 'vue-material-design-icons/SkipNext.vue'
 import BookmarkOutline from 'vue-material-design-icons/BookmarkOutline.vue'
 import EyeOff from 'vue-material-design-icons/EyeOff.vue'
 import Eye from 'vue-material-design-icons/Eye.vue'
+import Menu from 'vue-material-design-icons/Menu.vue'
 
 export {
     HomeOutline,
@@ -32,4 +33,5 @@ export {
     BookmarkOutline,
     EyeOff,
     Eye,
+    Menu,
 }

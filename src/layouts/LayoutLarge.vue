@@ -19,7 +19,7 @@
     </footer>
   </div>
 </template>
-<style>
+<style scoped>
 #layout-large {
   display: grid;
   grid-template-columns: 1fr 6fr;
