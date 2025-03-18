@@ -1,28 +1,26 @@
-# spotify
-
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
+# Spotify
+## Configuração de IDE recomendada
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Customize configuration
+## Personalizar configuração
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+## Instalação de modulos do projeto
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Compilar e atualizar para desenvolvimento
+
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Compilar e Minificar para Produção
 
 ```sh
 npm run build
