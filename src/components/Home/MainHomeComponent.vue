@@ -1,5 +1,5 @@
 <script setup>
-import { PlaylistMiniCardComponent, MixCardComponent } from '@/components'
+import { PlaylistMiniCardComponent, MixCardComponent, CardAlbumComponent } from '@/components'
 </script>
 <template>
   <div class="container">
@@ -28,8 +28,13 @@ import { PlaylistMiniCardComponent, MixCardComponent } from '@/components'
       <MixCardComponent />
     </div>
     <h2>Álbuns de artistas que você segue</h2>
-    <div>
-
+    <div class="album-cards-container">
+      <CardAlbumComponent />
+      <CardAlbumComponent />
+      <CardAlbumComponent />
+      <CardAlbumComponent />
+      <CardAlbumComponent />
+      <CardAlbumComponent />
     </div>
   </div>
 </template>
@@ -85,7 +90,7 @@ import { PlaylistMiniCardComponent, MixCardComponent } from '@/components'
   gap: 20px;
 }
 
-.mix-cards-container {
+.mix-cards-container, .album-cards-container {
   display: flex;
   width: 100%;
   justify-content: space-between;

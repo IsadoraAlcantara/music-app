@@ -19,7 +19,7 @@ import { SearchComponent } from '@/components'
 </template>
 <style scoped>
 nav {
-  padding: 10px;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   width: 84vw;
@@ -35,6 +35,16 @@ nav {
 a {
   color: var(--white);
   background-color: transparent;
+}
+
+.router-link-exact-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-grey);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .bt-user {
