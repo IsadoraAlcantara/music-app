@@ -3,7 +3,8 @@ import AlbumAsideComponent from "./SideBar/AlbumAsideComponent.vue";
 
 import SearchComponent from '@/components/SearchComponent.vue';
 import CardAlbumComponent from "./Album/CardAlbumComponent.vue";
-import PlaylistMiniCardComponent from './Home/PlaylistMiniCardComponent.vue'
+import PlaylistMiniCardComponent from './Home/PlaylistMiniCardComponent.vue';
+import MixCardComponent from './Home/MixCardComponent.vue';
 
 import MainHomeComponent from './Home/MainHomeComponent.vue'
 import MainSongListComponent from "./SongList/MainSongListComponent.vue";
@@ -18,6 +19,7 @@ export {
     SearchComponent,
     CardAlbumComponent,
     PlaylistMiniCardComponent,
+    MixCardComponent,
     MainSongListComponent, 
     MainGenderComponent,
     MainPlaylistComponent,

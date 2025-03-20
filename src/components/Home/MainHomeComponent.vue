@@ -1,5 +1,5 @@
 <script setup>
-import { PlaylistMiniCardComponent } from '@/components'
+import { PlaylistMiniCardComponent, MixCardComponent } from '@/components'
 </script>
 <template>
   <div class="container">
@@ -9,7 +9,28 @@ import { PlaylistMiniCardComponent } from '@/components'
       <button class="default">Músicas</button>
       <button class="default">Podcasts</button>
     </div>
-    <PlaylistMiniCardComponent />
+    <div class="mini-cards-container">
+      <PlaylistMiniCardComponent />
+      <PlaylistMiniCardComponent />
+      <PlaylistMiniCardComponent />
+      <PlaylistMiniCardComponent />
+      <PlaylistMiniCardComponent />
+      <PlaylistMiniCardComponent />
+      <PlaylistMiniCardComponent />
+      <PlaylistMiniCardComponent />
+    </div>
+    <h2>Mistura diária</h2>
+    <div class="mix-cards-container">
+      <MixCardComponent />
+      <MixCardComponent />
+      <MixCardComponent />
+      <MixCardComponent />
+      <MixCardComponent />
+    </div>
+    <h2>Álbuns de artistas que você segue</h2>
+    <div>
+
+    </div>
   </div>
 </template>
 <style scoped>
@@ -55,5 +76,18 @@ import { PlaylistMiniCardComponent } from '@/components'
   & .default:hover {
     background-color: var(--darker-grey);
   }
+}
+
+.mini-cards-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.mix-cards-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 </style>
