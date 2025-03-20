@@ -1,5 +1,6 @@
 <script setup>
 import { Play, PlaylistPlus } from '../icons'
+import { PlaylistCard } from '@/components'
 </script>
 <template>
   <div class="container">

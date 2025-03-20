@@ -13,7 +13,7 @@
     gap: 14px;
     padding: 4px;
     border-radius: 7px;
-    width: 280px;
+    width: 14.5vw
 }
 
 .mini-playlist-container:hover {

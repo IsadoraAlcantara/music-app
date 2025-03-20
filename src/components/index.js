@@ -5,6 +5,8 @@ import SearchComponent from '@/components/SearchComponent.vue';
 import CardAlbumComponent from "./Album/CardAlbumComponent.vue";
 import PlaylistMiniCardComponent from './Home/PlaylistMiniCardComponent.vue';
 import MixCardComponent from './Home/MixCardComponent.vue';
+import RecentsCardComponent from "./Home/RecentsCardComponent.vue";
+import PlaylistCard from "./Playlist/PlaylistCard.vue";
 
 import MainHomeComponent from './Home/MainHomeComponent.vue'
 import MainSongListComponent from "./SongList/MainSongListComponent.vue";
@@ -26,4 +28,6 @@ export {
     MainArtistComponent,
     MainAlbumComponent,
     MainHomeComponent,
+    RecentsCardComponent,
+    PlaylistCard,
 }

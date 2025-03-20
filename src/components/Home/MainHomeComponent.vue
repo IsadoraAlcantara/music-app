@@ -1,40 +1,63 @@
 <script setup>
-import { PlaylistMiniCardComponent, MixCardComponent, CardAlbumComponent } from '@/components'
+import {
+  PlaylistMiniCardComponent,
+  MixCardComponent,
+  CardAlbumComponent,
+  RecentsCardComponent
+} from '@/components'
 </script>
 <template>
   <div class="container">
     <h1>Bom dia, Isadora</h1>
-    <div class="buttons">
-      <button class="selected">Tudo</button>
-      <button class="default">Músicas</button>
-      <button class="default">Podcasts</button>
+    <div class="section">
+      <div class="buttons">
+        <button class="selected">Tudo</button>
+        <button class="default">Músicas</button>
+        <button class="default">Podcasts</button>
+      </div>
+      <div class="mini-cards-container">
+        <PlaylistMiniCardComponent />
+        <PlaylistMiniCardComponent />
+        <PlaylistMiniCardComponent />
+        <PlaylistMiniCardComponent />
+        <PlaylistMiniCardComponent />
+        <PlaylistMiniCardComponent />
+        <PlaylistMiniCardComponent />
+        <PlaylistMiniCardComponent />
+      </div>
     </div>
-    <div class="mini-cards-container">
-      <PlaylistMiniCardComponent />
-      <PlaylistMiniCardComponent />
-      <PlaylistMiniCardComponent />
-      <PlaylistMiniCardComponent />
-      <PlaylistMiniCardComponent />
-      <PlaylistMiniCardComponent />
-      <PlaylistMiniCardComponent />
-      <PlaylistMiniCardComponent />
+    <div class="section">
+      <h2>Mistura diária</h2>
+      <div class="mix-cards-container">
+        <MixCardComponent />
+        <MixCardComponent />
+        <MixCardComponent />
+        <MixCardComponent />
+        <MixCardComponent />
+      </div>
     </div>
-    <h2>Mistura diária</h2>
-    <div class="mix-cards-container">
-      <MixCardComponent />
-      <MixCardComponent />
-      <MixCardComponent />
-      <MixCardComponent />
-      <MixCardComponent />
+    <div class="section">
+      <h2>Álbuns de artistas que você segue</h2>
+      <div class="album-cards-container">
+        <CardAlbumComponent />
+        <CardAlbumComponent />
+        <CardAlbumComponent />
+        <CardAlbumComponent />
+        <CardAlbumComponent />
+        <CardAlbumComponent />
+      </div>
     </div>
-    <h2>Álbuns de artistas que você segue</h2>
-    <div class="album-cards-container">
-      <CardAlbumComponent />
-      <CardAlbumComponent />
-      <CardAlbumComponent />
-      <CardAlbumComponent />
-      <CardAlbumComponent />
-      <CardAlbumComponent />
+    <div class="section">
+      <h2>Tocadas recentemente</h2>
+      <div class="recents-cards-container">
+        <RecentsCardComponent />
+        <RecentsCardComponent />
+        <RecentsCardComponent />
+        <RecentsCardComponent />
+        <RecentsCardComponent />
+        <RecentsCardComponent />
+        <RecentsCardComponent />
+      </div>
     </div>
   </div>
 </template>
@@ -42,7 +65,7 @@ import { PlaylistMiniCardComponent, MixCardComponent, CardAlbumComponent } from 
 .container {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 40px;
   padding: 20px;
   background-color: #1e1e1e;
   margin-right: 10px;
@@ -90,9 +113,17 @@ import { PlaylistMiniCardComponent, MixCardComponent, CardAlbumComponent } from 
   gap: 20px;
 }
 
-.mix-cards-container, .album-cards-container {
+.mix-cards-container,
+.album-cards-container,
+.recents-cards-container {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 </style>
