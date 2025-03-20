@@ -3,7 +3,7 @@ import { Play, DotsHorizontal, Shuffle, FormatListBulleted } from '../icons'
 import { SearchComponent } from '@/components'
 </script>
 <template>
-  <main>
+  <div>
     <div class="playlist-details">
       <img class="playlist-image" src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
       <div class="playlist-info">
@@ -151,7 +151,7 @@ import { SearchComponent } from '@/components'
         </tr>
       </tbody>
     </table>
-  </main>
+  </div>
 </template>
 <style scoped>
 main {
@@ -162,6 +162,7 @@ main {
   height: 750px;
   border-radius: 7px;
   overflow-y: scroll;
+  overflow: hidden;
 }
 
 .playlist-details {

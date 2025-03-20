@@ -6,7 +6,9 @@ import { SearchComponent } from '@/components'
   <div>
     <nav>
       <div class="container">
-        <HomeOutline size="30" />
+        <router-link to="/">
+          <HomeOutline size="30" />
+        </router-link>
         <SearchComponent />
       </div>
       <button class="bt-user">
@@ -28,6 +30,11 @@ nav {
   color: #a0a0a0;
   align-items: center;
   gap: 20px;
+}
+
+a {
+  color: var(--white);
+  background-color: transparent;
 }
 
 .bt-user {
