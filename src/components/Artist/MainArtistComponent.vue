@@ -124,7 +124,8 @@ import { BookmarkOutline } from '../icons'
           <p>Lana Del Rey</p>
           <button class="see-button">ver</button>
         </div>
-      </div>      <div class="card">
+      </div>
+      <div class="card">
         <div class="img-container">
           <BookmarkOutline />
           <img
@@ -166,7 +167,7 @@ import { BookmarkOutline } from '../icons'
   border-radius: 7px;
   color: #e6e8ee;
   overflow-y: scroll;
-  overflow: hidden;
+  overflow-x: hidden;
   max-width: 63.8vw;
 }
 .buttons {
@@ -250,7 +251,7 @@ import { BookmarkOutline } from '../icons'
     }
 
     & .see-button:hover {
-      background-color: #2D4B73;
+      background-color: #2d4b73;
       color: #e6e8ee;
       transform: scale(1.1);
       transition: all 0.2s ease-in-out;

@@ -140,7 +140,7 @@ import { Play, PlaylistPlus } from '../icons'
   border-radius: 7px;
   color: #e6e8ee;
   overflow-y: scroll;
-  overflow: hidden;
+  overflow-x: hidden;
   max-width: 63.8vw;
 }
 
@@ -249,7 +249,7 @@ import { Play, PlaylistPlus } from '../icons'
 }
 
 .create-card:hover {
-  color: #38ABF2;
+  color: #38abf2;
   background-color: var(--darker-grey);
 }
 </style>

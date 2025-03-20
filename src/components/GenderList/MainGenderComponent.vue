@@ -28,7 +28,7 @@ import { genders } from './index'
   border-radius: 7px;
   color: #e6e8ee;
   overflow-y: scroll;
-  overflow: hidden;
+  overflow-x: hidden;
   max-width: 63.8vw;
 }
 

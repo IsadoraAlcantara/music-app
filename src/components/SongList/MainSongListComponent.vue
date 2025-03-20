@@ -162,7 +162,7 @@ main {
   height: 750px;
   border-radius: 7px;
   overflow-y: scroll;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .playlist-details {
