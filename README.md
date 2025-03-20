@@ -1,5 +1,5 @@
 # Music-app
-Projeto a fim de estudo que consiste na reconstrução do aplicativo de música spotify usando a API disponibilizada pelo próprio aplicativo. (Em progresso)
+Projeto a fim de estudo que consiste na construção de um aplicativo de música inspirado no spotify usando a API disponibilizada pelo próprio aplicativo. (Em progresso)
 
 ## Configuração de IDE recomendada
 
