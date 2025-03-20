@@ -9,7 +9,7 @@ Projeto a fim de estudo que consiste na construção de um aplicativo de música
 
 Veja [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## ⚙️ Instalação de modulos do projeto
+## ⚙️ Instalação de módulos do projeto
 
 ```sh
 npm install
@@ -40,4 +40,5 @@ Confira o [figma](https://www.figma.com/design/CNrn3ZWt3XtIIMrKDBDf5H/aplicativo
 O desing está sendo desenvolvido com o objetivo de esplorar grande parte das ferramentas do figma e também de criar telas com compontentes bastante diferentes entre si para que seja o mais desafiador possível passa-las para o código. A paleta de cores possui tons neutros, com bastante cinza, branco e preto. Além disso, apresenta tons de azul em pequenos detalhes, pois traz calma para o usuário e remete à tecnologia.
 
 ## 🛠️ Tecnologias utilizadas
+- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - linguagem de programação
 - [Vue.Js](https://vuejs.org/) - framework de javascript
