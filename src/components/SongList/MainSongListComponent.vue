@@ -262,7 +262,7 @@ main {
     }
 
     & tr:hover {
-      background-color: var(--darker-grey);
+      background-color: var(--darker-gray);
     }
   }
 

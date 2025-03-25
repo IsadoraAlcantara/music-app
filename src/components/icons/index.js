@@ -15,6 +15,8 @@ import BookmarkOutline from 'vue-material-design-icons/BookmarkOutline.vue'
 import EyeOff from 'vue-material-design-icons/EyeOff.vue'
 import Eye from 'vue-material-design-icons/Eye.vue'
 import Menu from 'vue-material-design-icons/Menu.vue'
+import Close from 'vue-material-design-icons/Close.vue'
+import CameraOutline from 'vue-material-design-icons/CameraOutline.vue'
 
 export {
     HomeOutline,
@@ -34,4 +36,6 @@ export {
     EyeOff,
     Eye,
     Menu,
+    Close,
+    CameraOutline
 }

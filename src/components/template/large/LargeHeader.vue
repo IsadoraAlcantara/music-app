@@ -41,7 +41,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--dark-grey);
+  background-color: var(--dark-gray);
   width: 40px;
   height: 40px;
   border-radius: 50%;

@@ -1,5 +1,9 @@
 <script setup>
+import { ref } from 'vue'
 import { PlaylistMusic, MicrophoneVariant, PlaylistPlus, Album, FolderPlayOutline } from '../../icons'
+import { ModalComponent } from '@/components';
+
+const showModal = ref(false)
 </script>
 <template>
   <main>
@@ -30,9 +34,10 @@ import { PlaylistMusic, MicrophoneVariant, PlaylistPlus, Album, FolderPlayOutlin
     </div>
     <div class="navigation">
       <h2>Playlists</h2>
-      <div class="line">
+      <div class="line" @click="showModal = !showModal">
         <PlaylistPlus size="23" />
         <p>Criar playlist</p>
+        <ModalComponent v-if="showModal" @close="showModal = !showModal" />
       </div>
       <div class="scroll">
         <router-link to="/song-list" class="playlist">
@@ -134,7 +139,7 @@ main {
 }
 
 .line:hover {
-  background-color: var(--darker-grey);
+  background-color: var(--darker-gray);
 }
 
 .playlist {
@@ -144,7 +149,7 @@ main {
 }
 
 .playlist:hover {
-  background-color: var(--darker-grey);
+  background-color: var(--darker-gray);
 }
 
 .scroll {

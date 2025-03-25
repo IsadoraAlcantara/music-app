@@ -21,7 +21,7 @@ import { Play, Shuffle, Sync, SkipNext } from '../../icons'
       <div class="player">
         <p>0:36</p>
         <div>
-          <div class="grey"></div>
+          <div class="gray"></div>
           <div class="white"></div>
         </div>
         <p>4:00</p>
@@ -79,7 +79,7 @@ img {
       bottom: 4px;
     }
 
-    & .grey {
+    & .gray {
       background-color: #515151;
       width: 30vw;
       height: 4px;
@@ -89,8 +89,8 @@ img {
 }
 
 .bt-player {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 </style>

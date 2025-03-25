@@ -2,6 +2,7 @@ import ArtistAsideComponent from "./SideBar/ArtistAsideComponent.vue";
 import AlbumAsideComponent from "./SideBar/AlbumAsideComponent.vue";
 
 import SearchComponent from '@/components/SearchComponent.vue';
+import ModalComponent from "./ModalComponent.vue";
 import CardAlbumComponent from "./Album/CardAlbumComponent.vue";
 import PlaylistMiniCardComponent from './Home/PlaylistMiniCardComponent.vue';
 import MixCardComponent from './Home/MixCardComponent.vue';
@@ -30,4 +31,5 @@ export {
     MainHomeComponent,
     RecentsCardComponent,
     PlaylistCard,
+    ModalComponent,
 }

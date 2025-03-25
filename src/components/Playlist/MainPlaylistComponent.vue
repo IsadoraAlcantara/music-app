@@ -1,6 +1,9 @@
 <script setup>
+import { ref } from 'vue'
 import { Play, PlaylistPlus } from '../icons'
-import { PlaylistCard } from '@/components'
+import { PlaylistCard, ModalComponent } from '@/components'
+
+const showModal = ref(false)
 </script>
 <template>
   <div class="container">
@@ -11,10 +14,11 @@ import { PlaylistCard } from '@/components'
       <button class="default">Podcast</button>
     </div>
     <div class="cards">
-      <div class="create-card">
+      <div class="create-card" @click="showModal = !showModal">
         <PlaylistPlus size="70" />
         <p>Criar playlist</p>
       </div>
+      <ModalComponent v-if="showModal" @close="showModal = !showModal" />
       <div class="card">
         <img class="playlist-img" src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
         <div class="blur">
@@ -169,7 +173,7 @@ import { PlaylistCard } from '@/components'
   }
 
   & .default:hover {
-    background-color: var(--darker-grey);
+    background-color: var(--darker-gray);
   }
 }
 
@@ -219,7 +223,7 @@ import { PlaylistCard } from '@/components'
 }
 
 .card:hover {
-  background-color: var(--darker-grey);
+  background-color: var(--darker-gray);
 }
 
 .card:hover > .blur {
@@ -251,6 +255,6 @@ import { PlaylistCard } from '@/components'
 
 .create-card:hover {
   color: #38abf2;
-  background-color: var(--darker-grey);
+  background-color: var(--darker-gray);
 }
 </style>

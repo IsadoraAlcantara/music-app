@@ -24,7 +24,7 @@
 }
 
 .card:hover {
-    background-color: var(--darker-grey);
+    background-color: var(--darker-gray);
 }
 
 .name-text {
@@ -33,7 +33,7 @@
 }
 
 .artist-text {
-    color: var(--light-grey);
+    color: var(--light-gray);
     font-size: 13px;
 }
 </style>

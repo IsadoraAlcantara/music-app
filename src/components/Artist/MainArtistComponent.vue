@@ -194,7 +194,7 @@ import { BookmarkOutline } from '../icons'
   }
 
   & .default:hover {
-    background-color: var(--darker-grey);
+    background-color: var(--darker-gray);
   }
 }
 

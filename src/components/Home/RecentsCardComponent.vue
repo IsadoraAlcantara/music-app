@@ -44,7 +44,7 @@
 }
 
 .card:hover {
-  background-color: var(--darker-grey);
+  background-color: var(--darker-gray);
 }
 
 .card:hover > .blur {

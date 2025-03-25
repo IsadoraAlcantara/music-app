@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <img class="playlist-img" src="https://i.ibb.co/XfPfqnBD/image.jpg" alt="" />
-    <div class="blur">
+    <div class="shadow">
       <Play size="70" />
     </div>
     <h2>Romantique</h2>
@@ -52,14 +52,14 @@
 }
 
 .card:hover {
-  background-color: var(--darker-grey);
+  background-color: var(--darker-gray);
 }
 
-.card:hover > .blur {
+.card:hover > .shadow {
   display: flex;
 }
 
-.blur {
+.shadow {
   display: none;
   position: absolute;
   z-index: 1;
@@ -70,5 +70,4 @@
   height: 9vw;
   border-radius: 7px;
 }
-
 </style>
