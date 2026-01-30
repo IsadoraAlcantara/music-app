@@ -1,13 +1,12 @@
 <script setup>
-import { HomeOutline } from '../../icons'
+import { HomeVariantOutline } from '../../icons'
 import { SearchComponent } from '@/components'
 </script>
 <template>
-  <div>
     <nav>
       <div class="container">
         <router-link to="/">
-          <HomeOutline size="30" />
+          <HomeVariantOutline size="28" />
         </router-link>
         <SearchComponent />
       </div>
@@ -15,36 +14,35 @@ import { SearchComponent } from '@/components'
         <img src="https://i.ibb.co/YBBpLQsg/transferir-2.jpg" alt="" />
       </button>
     </nav>
-  </div>
 </template>
 <style scoped>
 nav {
-  padding: 10px 0;
+  padding: 10px 10px 10px 0;
   display: flex;
   justify-content: space-between;
-  width: 84vw;
+  width: 100%;
 }
 
 .container {
   display: flex;
   color: #a0a0a0;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 a {
-  color: var(--white);
-  background-color: transparent;
-}
-
-.router-link-exact-active {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 35%;
+  height: 36px;
+  aspect-ratio: 1/1;
+  color: var(--dark-white);
+  background-color: var(--darkest-gray);
+}
+
+.router-link-exact-active {
   background-color: var(--dark-gray);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
 }
 
 .bt-user {

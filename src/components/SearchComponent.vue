@@ -3,16 +3,16 @@ import { Magnify } from './icons'
 </script>
 <template>
   <div class="search">
-    <Magnify />
+    <Magnify size="20"/>
     <input type="text" placeholder="Pesquisar" />
   </div>
 </template>
 <style scoped>
 .search {
-  background-color: rgba(128, 128, 128, 0.3);
+  background-color: var(--darkest-gray);
   width: 300px;
-  color: #a0a0a0;
-  border-radius: 20px;
+  color: var(--dark-white);
+  border-radius: 12px;
   padding: 8px 20px;
   display: flex;
   align-items: center;
@@ -23,10 +23,16 @@ import { Magnify } from './icons'
   }
 
   & input {
+    font-weight: 500;
     background-color: transparent;
     border: none;
     font-size: 15px;
     outline: none;
+  }
+
+  & input::placeholder, input {
+    color: var(--dark-white);
+    opacity: 1;
   }
 }
 </style>

@@ -1,4 +1,4 @@
-import HomeOutline from 'vue-material-design-icons/HomeOutline.vue'
+import HomeVariantOutline from 'vue-material-design-icons/HomeVariantOutline.vue'
 import PlaylistPlus from 'vue-material-design-icons/PlaylistPlus.vue'
 import MicrophoneVariant from 'vue-material-design-icons/MicrophoneVariant.vue'
 import Album from 'vue-material-design-icons/Album.vue'
@@ -19,7 +19,7 @@ import Close from 'vue-material-design-icons/Close.vue'
 import CameraOutline from 'vue-material-design-icons/CameraOutline.vue'
 
 export {
-    HomeOutline,
+    HomeVariantOutline,
     PlaylistPlus,
     MicrophoneVariant,
     Album,
