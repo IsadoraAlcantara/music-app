@@ -66,6 +66,7 @@ import { genders } from './index'
   gap: 20px;
 
   & .card {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     width: 14.5vw;
     height: 8vw;
     border-radius: 7px;
@@ -78,6 +79,7 @@ import { genders } from './index'
   }
 
   & .cards-image {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     background-image: inherit;
     position: absolute;
     border-radius: 7px;
