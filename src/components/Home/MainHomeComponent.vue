@@ -67,7 +67,7 @@ import {
   flex-direction: column;
   gap: 40px;
   padding: 20px;
-  background-color: #1e1e1e;
+  background-color: var(--light-black);
   margin-right: 10px;
   width: 100%;
   height: 750px;

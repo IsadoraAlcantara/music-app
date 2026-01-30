@@ -156,7 +156,7 @@ import { SearchComponent } from '@/components'
 <style scoped>
 main {
   background: rgb(39, 64, 38);
-  background: linear-gradient(180deg, rgba(39, 64, 38, 1) 10%, rgba(30, 30, 30, 1) 54%);
+  background: linear-gradient(180deg, rgba(39, 64, 38, 1) 10%, var(--light-black) 54%);
   margin-right: 10px;
   width: 100%;
   height: 750px;

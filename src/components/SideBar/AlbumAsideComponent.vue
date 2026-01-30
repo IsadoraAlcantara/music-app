@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: column;
   width: 20vw;
-  background-color: #1e1e1e;
+  background-color: var(--light-black);
   border-radius: 7px;
   height: 255px;
   margin-right: 10px;

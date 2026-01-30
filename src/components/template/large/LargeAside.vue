@@ -73,7 +73,7 @@ const showModal = ref(false)
 </template>
 <style scoped>
 main {
-  background-color: #1e1e1e;
+  background-color: var(--light-black);
   border-radius: 7px;
   margin: 10px;
   width: 270px;
