@@ -8,7 +8,7 @@ import { genders } from './index'
       <button class="selected">Tudo</button><button class="default">Favoritos</button>
     </div>
     <div class="cards">
-      <div class="card" v-for="gender in genders" :style="{backgroundColor: gender.color}">
+      <div class="card" v-for="gender in genders" :key="gender.id" :style="{backgroundColor: gender.color}">
         {{ gender.name }}
         <div class="cards-image" :style="{backgroundImage: 'url(' + gender.image +')'}"></div>
       </div>

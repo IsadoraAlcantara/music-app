@@ -8,6 +8,7 @@ import PlaylistMiniCardComponent from './Home/PlaylistMiniCardComponent.vue';
 import MixCardComponent from './Home/MixCardComponent.vue';
 import RecentsCardComponent from "./Home/RecentsCardComponent.vue";
 import PlaylistCard from "./Playlist/PlaylistCard.vue";
+import CreatePlaylistCardComponent from "./Playlist/CreatePlaylistCardComponent.vue"
 
 import MainHomeComponent from './Home/MainHomeComponent.vue'
 import MainSongListComponent from "./SongList/MainSongListComponent.vue";
@@ -32,4 +33,5 @@ export {
     RecentsCardComponent,
     PlaylistCard,
     ModalComponent,
+    CreatePlaylistCardComponent,
 }
